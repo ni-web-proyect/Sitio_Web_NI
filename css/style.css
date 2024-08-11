@@ -1,0 +1,1171 @@
+:root {
+    --rojo: #811716;
+    --celeste: #81d4fa;
+    --blanco: #ffffff;
+    --amarillo: #FDD835;
+    --rosado: #E1BEE7;
+    --gris: #9E9E9E;
+    --azul: #12345f;
+    --morado: #7E57C2;
+    --naranja: #fb8c00;
+    --verde-oscuro: #70917a;
+    --verde-claro: #a7c9b1;
+    --negro: #000000;
+    --cafe: #4b2808;
+    --titulos: "Merriweather", serif;
+    --textos: "Source Sans 3", sans-serif;
+}
+
+/* Globales */
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden; /* Esto previene el scroll horizontal */
+
+}
+
+h1 {
+    text-align: center;
+    font-family: var(--titulos);
+}
+
+p {
+    font-family: var(--textos);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+.rojo{
+    background-color: var(--rojo);
+}
+
+.azul{
+    background-color: var(--azul);
+}
+
+.cafe{
+    background-color: var(--cafe);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.contenedor {
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.tamanio-ajustado {
+    height: 100px;
+    width: 100px;
+}
+
+.tamanio-estandar {
+    width: 100%;
+    height: auto;
+}
+
+.tamanio-minimizado {
+    height: 30%;
+    width: 30%;
+}
+
+.logo-negro {
+    flex: 0 1 auto;
+}
+
+.navegacion-principal {
+    display: flex;
+    flex: 2;
+    justify-content: center;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.navegacion-principal a {
+    color: var(--negro);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 1.5rem;
+}
+
+.lupa {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+.naturaleza-inquieta_texto{
+    margin-top: 3rem;
+}
+
+@media(min-width: 768px){
+    .naturaleza-inquieta{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+        gap: 10rem;
+    }
+}
+
+.font-tit{
+    font-family: var(--titulos);
+}
+
+.font-text{
+    font-family: var(--textos);
+    font-size: 2.5rem;
+    text-align: justify;
+}
+
+@media(max-width: 768px){
+    .font-text{
+        font-size: 1.5rem;
+    }
+}
+
+.conocer-mas{
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+}
+
+
+
+.conocer-mas a{
+    background-color: var(--negro);
+    color: var(--blanco);
+    font-family: var(--textos);
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 2rem;
+    text-align: center;
+    border: none;
+}
+
+
+
+.explorar {
+    background-color: var(--negro);
+    color: var(--blanco);
+    font-family: var(--textos);
+    text-transform: uppercase;
+    margin: 10rem;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+}
+
+.catalogo-previa_flor {
+    border: 2px solid var(--negro);
+    border-radius: 1.8rem;
+}
+
+@media(min-width: 768px){
+    .catalogo-previa_flor {
+        border: 2px solid var(--negro);
+        border-radius: 1.8rem;
+        padding: 3rem;
+    }
+}
+.catalogo-previa_flor {
+    border: 2px solid var(--negro);
+    border-radius: 1.8rem;
+}
+
+.catalogo-previa_flor img {
+    border-radius: 2rem;
+    align-items: center;
+}
+
+.catalogo-previa_flor p {
+    background-color: var(--blanco);
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: var(--titulos);
+    padding: 2rem;
+}
+
+.explorar {
+    display: inline-block;
+    margin-top: 20px; /* Ajusta el valor según sea necesario */
+    padding: 10px 20px; /* Opcional: ajusta el padding si deseas un botón más grande */
+    text-decoration: none;
+    background-color: #000; /* Cambia el color de fondo según tu diseño */
+    color: #fff; /* Cambia el color del texto según tu diseño */
+    border-radius: 3rem; /* Opcional: añade esquinas redondeadas */
+    text-align: center;
+}
+
+.catalogo-previa_flor p span {
+    font-family: var(--titulos);
+    font-weight: lighter;
+}
+
+
+@media(min-width: 768px){
+    .caracteristicas {
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border-top: 2px solid var(--verde-claro);
+    border-bottom: 2px solid var(--verde-claro);
+    }
+
+    .caracteristicas-palabras {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    }
+
+}
+
+.caracteristicas img{
+    height: 700px;
+    margin: 0 auto;
+    margin-top: 3rem;
+    margin-left: 10rem;
+
+}
+
+.palabra{
+    border: 2px solid var(--verde-claro);
+    padding: 3rem;
+    text-align: center;
+}
+
+.palabra h1 {
+    font-family: var(--titulos);
+    font-size: 3rem;
+}
+
+.palabra p {
+    font-family: var(--textos);
+    font-size: 3rem;
+    padding: 3rem;
+}
+
+.mision {
+    background-color: var(--verde-claro);
+}
+
+.vision {
+    background-color: var(--verde-oscuro);
+}
+
+@media(min-width: 768px){
+    .mision_vision {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 10rem;
+    }
+}
+
+.mision_vision{
+    margin-top: 10rem;
+}
+
+.mision-texto, .vision-texto {
+    padding: 4rem;
+}
+
+.mision-texto h1, .vision-texto h1 {
+    font-family: var(--titulos);
+    font-size: 3rem;
+}
+
+.mision-texto p, .vision-texto p {
+    font-family: var(--textos);
+    font-size: 2.5rem;
+    padding: 4rem;
+    text-align: center;
+}
+
+@media(max-width: 768px){
+    .mision-texto p, .vision-texto p{
+        font-size: 1.5rem;
+    }
+}
+
+.footer {
+    margin-top: 30rem;
+    background-color: var(--verde-claro);
+    display: grid;
+    grid-template-columns: 35% 65%;
+    gap: 10rem;
+}
+
+@media(min-width: 768px){
+    .footer h1 {
+        color: var(--blanco);
+        margin: 3rem;
+    }
+    
+    .navegacion-footer {
+        margin-top: 50rem;
+        display: grid;
+        grid-template-rows:repeat(5, 15%);
+
+    }
+    
+
+}
+
+.footer h1 {
+    color: var(--blanco);
+    margin: 3rem;
+    display: grid;
+}
+
+.navegacion-footer{
+    margin-top: 3rem;
+    display: grid;
+    grid-template-rows: repeat(5, 20%) ;
+}
+
+
+.navegacion-footer a {
+    text-align: center;
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 1rem;
+    margin: 0 1rem;
+    flex: 0 calc(10% rem);
+}
+
+.img-sec{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+@media(max-width: 1400px){
+    .img-sec{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+.section-01_1 p, .omv-o p, .omv-v p, .omv-m p{
+    margin: 2rem 3rem;
+    font-size: 2rem;
+    text-align: justify;
+}
+
+.omv{
+    padding: 1rem;
+}
+
+@media(min-width: 768px){
+    .omv{
+        margin-left: 5rem;
+        padding-left: 20rem;
+    }
+}
+
+@media(min-width: 768px){
+    .omv{
+    margin-left: 1rem;
+    padding: 1rem;
+    }
+
+    .section-02{
+        margin-left: 5rem ;
+    }
+}
+
+.img-22{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-02 h1{
+    margin: 5rem ;
+}
+
+.section-03 h1{
+    margin: 10rem;
+}
+
+@media(min-width: 1501px){
+    .section-01{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+    }
+
+    .primera{
+        grid-column: 2 / 3;
+    }
+     
+    .segunda{
+        grid-row: 1 / 2;
+    }
+
+    .section-02{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+    }
+}
+
+.colection-text h1{
+    margin: 3rem;
+}
+
+.colection-text p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    font-size: 2rem;
+}
+
+@media(max-width: 768px){
+    .colection-text p{
+        font-size: 1.5rem;
+        margin: auto 3rem;
+    }
+}
+
+@media(min-width: 768px){
+    .colection-img{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.imagen-2, .imagen-2 p{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-2 img{
+    border: 2px solid var(--negro);
+    border-radius: 3rem;
+    margin-top: 10rem;
+}
+
+.imagen-2 p{
+    font-weight: bold;
+    margin-top: 2rem;
+    font-size: 3rem;
+}
+
+
+.slide-txt h1{
+    margin: 6rem;
+}
+
+.slide-txt p{
+    padding: 0rem 5rem;
+    font-size: 2rem;
+    text-align: justify;
+}
+
+.slide-txt{
+    display: grid;
+}
+
+@media(min-width: 1285px){
+    .slide-txt p{
+        margin: 1rem 30rem;
+        font-size: 2rem;
+    }
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.intro p{
+    margin: 3rem 6rem;
+    font-size: 2rem;
+}
+
+.sort{
+    display: flex;
+    justify-content: end;
+    margin: 0rem 2rem;
+}
+
+
+.nav-tienda a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--negro);
+    margin: 1rem 6rem;
+    padding-top: 2rem;
+    padding-right: 5rem; 
+}
+
+.categoria-nav p {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 6rem;
+}
+
+
+.catalogo{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+
+.catalogo{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    justify-content: center;
+    align-items: center;
+}
+
+.catalogo-elemento, .catalogo-elemento-poster{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(min-width: 1000px){
+    .nav-tienda{
+        display: grid;
+        grid-template-rows: repeat(3, 33%);
+    }
+
+    .categoria{
+        display: grid;
+        grid-template-columns: 20% 80%;
+    }
+
+    .catalogo{
+        display: grid;
+        grid-template-columns: repeat(3, 25%);
+        justify-content: start;
+        align-items: center;
+    }
+
+    
+}
+
+.catalogo-sticker, .catalogo-poster{
+    max-width: 20rem;
+    display: grid;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.catalogo-poster{
+    border: 2px solid var(--negro);
+    max-width: 20rem;
+    display: grid;
+    justify-content: center;
+    border-radius: 2rem;
+    margin-top: 2rem;
+}
+
+
+
+.catalogo-poster img{
+    border-radius: 2rem;
+
+}
+
+
+.catalogo-sticker p{
+    margin: 1rem;
+    font-size: 2rem;
+    font-family: var(--titulos);
+}
+
+.catalogo-elemento h2{
+    font-size: 2rem;
+    margin-top: 1rem;
+    
+}
+
+.catalogo-elemento-poster h2{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.catalogo-elemento p{
+    margin: 1rem 0rem;
+}
+
+.sort span{
+    font-weight: lighter;
+}
+
+/******************************* CSS Product *******************************/
+
+@media(min-width:1083px){
+    .secp-01{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.producto-elemento{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.elementop{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--negro);
+    border-radius: 3rem;
+    width: 450px;
+    height: 600px;
+}
+
+.elementop img{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--negro);
+    width: 400px;
+    height: 500px;
+    border-radius: 2rem;
+}
+
+.elementop p{
+    font-weight: bold;
+    font-size: 4rem;
+    font-family: var(--titulos);
+}
+
+.elementop p span{
+    font-weight: 100;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.producto-txt h2{
+    font-family: var(--textos);
+    margin: 3rem;
+}
+
+.producto-txt h2{
+    font-family: var(--textos);
+    margin: 3rem;  
+}
+
+.producto-txt p{
+    margin: 2rem;
+    font-size: 2rem;
+}
+
+.formulario {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* Estilo del campo de entrada */
+.formulario__campo {
+    padding: 10px;
+    width: 500px;
+    height: 50px;
+    border-radius: 3rem;
+    font-size: 16px;
+    text-align: center;
+    outline: none;
+    transition: border-color 0.3s ease;
+    margin-top: 2rem;
+}
+
+.formulario__campo:focus {
+    border-color: #007BFF;
+}
+
+/* Estilo del botón de submit */
+.formulario__submit {
+    margin-top: 5rem;
+    padding: 10px 20px;
+    height: 50px;
+    background-color: var(--negro);
+    color: white;
+    border: none;
+    border-radius: 3rem;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formulario__comprar{
+    padding: 10px 20px;
+    height: 50px;
+    background-color: var(--negro);
+    color: white;
+    border: none;
+    border-radius: 3rem;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formulario__submit:hover, .formulario__comprar:hover {
+    background-color: var(--gris)
+}
+
+.similares-titulo{
+    text-align: center;
+    margin-top: 10rem;
+    margin-bottom: 3rem;
+    font-size: 5rem;
+}
+
+.productos-similares{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    justify-content: center;
+    align-items: center;
+}
+
+@media(min-width: 1083px){
+    .productos-similares{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.producto-elemento-sticker, .producto-elemento-poster{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.producto-elemento-sticker p{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.producto-elemento-sticker h2{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.producto-elemento-poster p{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.producto-elemento-poster h2{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.producto-sticker{
+    border: 2px solid var(--negro);
+    border-radius: 2rem;
+}
+
+.producto-sticker img{
+    margin: 1rem;
+    border-radius: 2rem;
+}
+
+.producto-poster{
+    border: 2px solid var(--negro);
+    border-radius: 2rem;
+}
+
+.section-03 .caracteristicas-palabras .palabra h1{
+    margin: 2rem;
+}
+
+.section-03 .caracteristicas-palabras .palabra p{
+    text-align: center;
+}
+
+.intro h1{
+    margin:3rem;
+}
+
+.intro p{
+    text-align: justify;
+}   
+
+@media (max-width: 768px) {
+
+
+    .contenedor { /* Asegura que el contenido no se desborde */
+        padding: 0 10px; /* Un poco de espacio a los lados */
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navegacion-principal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .navegacion-principal a {
+        padding: 10px 0;
+        font-size: 16px;
+    }
+
+    .hero-img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .naturaleza-inquieta {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .naturaleza-inquieta_texto {
+        margin-bottom: 20px;
+    }
+
+    .naturaleza-inquieta_img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .naturaleza-inquieta_img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .naturaleza-inquieta, .catalogo-previa, .caracteristicas, .mision_vision {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap; /* Permite que los elementos internos se ajusten */
+      }
+
+      .naturaleza-inquieta_texto, .mision-texto, .vision-texto, .caracteristicas-palabras {
+        max-width: 600px;
+      }
+
+      .swiper-container {
+        max-width: 100%;
+        overflow: hidden;
+      }
+      
+    .swiper-slide {
+        flex-shrink: 0;
+    }
+
+    .swiper-container {
+        overflow: hidden;
+      }
+      
+    .catalogo-previa .swiper-slide img {
+        width: 80%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .swiper-slide img {
+        width: 100%;
+        height: auto;
+      }
+
+    .caracteristicas-palabras {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .caracteristicas img{
+        margin: 1rem;
+    }
+
+    .caracteristicas-palabras .palabra {
+        margin-bottom: 20px;
+    }
+
+    .mision_vision {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .mision-texto, .vision-texto {
+        text-align: center;
+    }
+
+    .footer {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .footer img {
+        width: 200px;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .navegacion-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .navegacion-footer a {
+        font-size: 16px;
+    }
+
+    .nav {
+        padding: 5px;
+    }
+
+    .navegacion-principal a {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .section-01_1, .omv, .caracteristicas-palabras {
+        padding: 10px;
+    }
+
+@media(max-width:768px){
+    .section-01_1 p{
+        font-size: 1.5rem;
+     }
+    }
+
+    .img-22, .img-sec {
+        margin: 0;
+    }
+
+    .omv {
+        flex-direction: column;
+    }
+
+    .omv-o, .omv-m, .omv-v {
+        margin: 10px 0;
+    }
+
+    @media(max-width: 768px){
+        .omv-o p, .omv-m p, .omv-v p {
+            font-size: 1.5rem;
+        }
+    }
+
+    .secp-01 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .producto-elemento {
+        margin-bottom: 20px;
+    }
+
+    .producto-txt {
+        max-width: 100%;
+    }
+
+    .formulario {
+        flex-direction: column;
+    }
+
+    .formulario__campo,
+    .formulario__submit,
+    .formulario__comprar {
+        width: 100%;
+    }
+
+    .secp-02 {
+        margin-top: 20px;
+    }
+
+    .productos-similares {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .producto-elemento-sticker,
+    .producto-elemento-poster {
+        max-width: 100%;
+    }
+
+    .navegacion-footer a {
+        font-size: 14px;
+    }
+
+    .intro h1 {
+        font-size: 20px;
+    }
+
+    .intro p {
+        font-size: 16px;
+    }
+
+    .sort {
+        font-size: 18px;
+    }
+
+    .categoria {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-tienda {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .catalogo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .catalogo-elemento,
+    .catalogo-elemento-poster {
+        max-width: 100%;
+    }
+
+    .navegacion-footer a {
+        font-size: 14px;
+    }
+
+    .slide-txt {
+        padding: 10px;
+    }
+
+    .swiper-slide {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav {
+        padding: 10px;
+    }
+
+    .navegacion-principal {
+        font-size: 14px;
+    }
+
+    .footer {
+        font-size: 14px;
+    }
+
+    .slide-txt h1 {
+        font-size: 18px;
+    }
+
+    .slide-txt p {
+        font-size: 14px;
+    }
+
+    .swiper-button-next, .swiper-button-prev {
+        width: 30px;
+        height: 30px;
+    }
+
+    .swiper-button-next svg, .swiper-button-prev svg {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (min-width: 1285px) {
+    .section-01, .section-02 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+    }
+
+    .slide-txt p {
+        margin: 1rem 30rem;
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 5px; /* Reduce el padding en pantallas más pequeñas */
+    }
+
+    .some-element { 
+        width: 100%; /* Asegura que los elementos se ajusten al ancho de la pantalla */
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed; /* Asegura que la tabla se ajuste al ancho del contenedor */
+}
+
